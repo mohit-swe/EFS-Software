@@ -1,0 +1,226 @@
+.content
+{
+	background:white;
+	width:100%;
+	height:100%;
+}
+.navbar
+{
+	margin-bottom:0;
+	border-radius:0;
+	background:black;
+	color:white;
+	padding:1% 0;
+	font-size:1.2em;
+	border:0;
+	font-family:century gothic;
+	
+}
+
+	
+.navbar-brand
+{
+	float:left;
+	font-size:30px;
+	padding:15px 12px 6px;
+
+}
+
+
+
+
+.navbar-inverse .navbar-nav .active a,.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover
+{
+	color:black;
+	background:yellow;
+	border-radius:12px;
+	
+}
+
+.navbar-inverse .navbar-nav  a:hover
+{
+	text-decoration:underline;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-caption{
+	top:30%;
+	font-family:century gothic;
+}
+
+.container
+{
+	margin:4% auto;
+	background:#99ffb9;
+	border-radius:11px;
+}
+.heading-underline
+{
+	width:9rem;
+	height:.2rem;
+	background:#003300;
+	margin: 0 auto 1rem;
+	
+}
+#main [class*=col-]
+{
+	padding:0;
+	border-radius:12px;
+}
+#jack
+{
+max-width:100%;
+transition:transform .1s ease;
+}
+#jack:hover
+{
+transform:scale(1.1);
+cursor:zoom-in;
+}
+#jack_1{
+overflow:hidden;
+}
+.card
+{
+margin:2rem;
+background:#009999;
+border-radius:12px;
+font-family:century gothic;
+font-size:14px;
+
+}
+	footer
+	{
+		width:100%;
+		background:black;
+		font-family:century gothic;
+		font-size:20px;
+		padding:6%;
+		color:white;
+		
+	}
+	.fa
+	{
+		padding:20px;
+		font-size:25px;
+		color:white;	
+	}
+	.fa:hover
+	{
+		color:green;
+		text-decoration:none;
+	}
+	#icon
+	{
+		font-size:33px;
+		margin:1% auto;
+	}
+	#copy
+	{
+		font-family:century gothic;
+		font-size:13px;
+		letter-spacing:6px;
+	}
+	@media(max-width:900px)
+	{
+		.fa{
+			font-size:20px;
+			padding:10px;
+		}
+	}
+	@media(max-width:600px)
+	{
+		.carousel-caption
+		{
+			display:none;
+		}
+		#icon{
+			max-width:150px;
+		}
+		.navbar
+		{
+			margin-bottom:0;
+	border-radius:0;
+	background:black;
+	color:white;
+	padding:.1% 0;
+	font-size:1.2em;
+	border:0;
+	font-family:century gothic;
+
+		}
+	}
+	
+.c1
+{
+color:black;
+background:red;
+padding:0px 10px;
+}
+.c2
+{
+color:black;
+background:grey;
+padding:0px 10px;
+}
+.c3
+{
+color:black;
+background:white;
+padding:0px 10px;
+}
+
+table #table1 
+  {
+    width:40%; 
+    margin-left:30%; 
+    margin-right:30%;
+	font-family:sans-serif;
+	text-align: center;
+	border: 2px solid #bbb;
+  }
+  
+  th {
+	background-color:#ffff88;
+  }
+  tr { 
+	font-size: 20px; 
+	}
+
+@media only screen and (max-width: 1250px) {
+tr { 
+	font-size: 16px; 
+	}
+table #table1 {
+    width:50%; 
+    margin-left:25%; 
+    margin-right:25%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+tr { 
+	font-size: 12px; 
+	}
+table #table1 {
+    width:90%; 
+    margin-left:5%; 
+    margin-right:5%;
+  }
+}
+	
+	
+		
