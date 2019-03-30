@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>EFS Software</title>
-  <link rel="shortcut icon" href="img/logo.png">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title style="font-family:century gothic;">EFS Software</title>
+   <link rel="shortcut icon" href="img/logo.png">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <!-- Main Stylesheet File -->
+  <link href="css_1/style.css" rel="stylesheet">
+
   <style>
-  
 .video-wrapper
 {
 position:relative;
-padding-bottom:56.25%; <!--as pect ratio 16by3-->
-
-
+padding-bottom:56.25%;
+border-radius:12px;
+ <!--as pect ratio 16by3-->
 }
 .video-wrapper iframe
 {
@@ -28,14 +46,13 @@ height:100%;
 top:0;
 left:0;
 }
-
 .content
  {
  
  display:none;
  
  }
- .preloader
+.preloader
 {
 
 margin:0;
@@ -46,259 +63,630 @@ margin-right:-50%;
 transform:translate(-50%,-50%);
 
 } 
-  
-  
-  
-  </style>
+</style>
+
+
 </head>
-<body data-spy="scroll" data-target="#menu"  >
 
-<div class="preloader">
-<img src="img/pageloading.gif"/>
-</div>
-<div class="content">
-<nav class="navbar navbar-default navbar-fixed-top">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbard">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="#"><span style="color:red;">E</span><span style="color:orange;">F</span><span style="color:green;">S</span> <span style="color:white;">Software</span></a>
-</div>
-<div class="collapse navbar-collapse" id="navbard">
-<ul class="nav navbar-nav navbar-right">
-<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span><b>Home</b></a></li>
-<li><a href="#about"><b> About Us</b></a></li>
-<li><a href="#price"> <b>Premium Price</b></a></li>
-<li><a href="#benifit"><b> Benifits</b></a></li>
-<li><a href="#rev"><b> User Review</b></a></li>
-<li><a href="signup.php"><b> Sign Up</b></a></li>
-<li><a href="login.php"> <b>Login</b> </a></li>
- 
-</ul>
+<body>
 
 
-</div>
-</div>
-</nav>
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      
-
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="img/img_1a.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="img/img_2a.png" alt="Chicago" style="width:100%;">
-        <div class="carousel-caption">
-          
-        </div>
-      </div>
-    
-     
-	  
-	  
-	
+  <!--==========================
+    Header
+  ============================-->
   
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <a href="#intro" class="scrollto" style="font-size:30px; font-family:century gothic;"><span style="color:red;">E</span><span style="color:orange;">F</span><span style="color:green;">S</span> <span style="color:white;">Software</span></a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li class="menu-has-children"><a href="">Join Us</a>
+            <ul>
+              <li><a href="signup.php">Signup</a></li>
+              <li><a href="login.php">Login</a></li>
+              
+            </ul>
+          </li>
+          
+        </ul>
+      </nav><!-- #nav-menu-container -->
     </div>
+  </header><!-- #header -->
 
-    <!-- Left and right controls -->
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>We are EFS Software family</h2>
+                <p style="font-family:century gothic;">Share us, Support us, Like us, Expand us.</p>
+                <a href="signup.php" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>We Work</h2>
+                <p style="font-family:century gothic;">To cater the need of EFS Software users.</p>
+                <a href="signup.php" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Share EFS Software</h2>
+                <p style="font-family:century gothic;">Helps user to access file from any device.</p>
+                <a href="signup.php" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Expand Our network</h2>
+                <p style="font-family:century gothic;">We know that the public support would help EFS Software growth.</p>
+                <a href="signup.php" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
     
-  </div>
-<div class="container text-center" id="about">
-<div class="row">
-<div class="col-sm-12">
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
 
-<h2><u>About Us</u></h2>
-<p>EFS Software<br>
-<i style="font-family:century gothic;font-size:14px;">"EFS Software is basically file online sharing software cum web app  and has main motive in sharing the file ,doc,mp3 song, videos etc. as a student developer this software made life easy in easy and secure upload fom one device and easy download from the next device , easy to use and compact ,but our app is secure and safe " <br>
-........Developer.
-</i>
-</p>
-</div>
-</div>
-</div>
-<hr>
+        <header class="section-header">
+          <h3 style="font-family:century gothic;" >About Us</h3>
+          <p style="font-family:century gothic;">Hey users I am Mohit Ojha the developer of EFS Software and my objective is help the developer.</p>
+        </header>
 
-<div class="container text-center" id="about">
-<div class="row">
-<div class="col-sm-12">
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#" style="font-family:century gothic;" >Our Mission</a></h2>
+              <p style="font-family:century gothic;">
+                Success,help other,security,ease access and much more that caters public demands.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-plan.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#" style="font-family:century gothic;">Our Plan</a></h2>
+              <p style="font-family:century gothic;" >
+                Currently our aim is to provide free plan to every users .
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-vision.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#"style="font-family:century gothic;">Our Vision</a></h2>
+              <p style="font-family:century gothic;">
+                Lucid,Allowing more user to access our product,supportive,helpfull and ease access to everyone with security to data sharing.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+<div class="col-md-12">
 <div class="video-wrapper">
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S7xoBBGInng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
-</div>
-</div>
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
 
-<div class="container text-center" id="main"  >
-<div class="row">
+        <header class="section-header wow fadeInUp">
+          <h3 style="font-family:century gothic;" >Services</h3>
+          <p style="font-family:century gothic;" >Few Shown below.</p>
+        </header>
 
-<div class="col-sm-12" id="price">
-<h2>Premium Pricing</h2>
-<div class="heading-underline"></div>
-</div>
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            
+            <h4 class="title"><a href="" style="font-family:century gothic;" >Sharing data</a></h4>
+            <p class="description"style="font-family:century gothic;" >Sharing of data form one to one users</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+           
+            <h4 class="title"><a href="">Online Scanning</a></h4>
+            <p class="description">Support scanning of the data</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            
+            <h4 class="title"><a href="">Storage</a></h4>
+            <p class="description" style="font-family:century gothic;">Online storage of data for ease access from any where from any device.</p>
+          </div>
+          
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Work with</h3>
+        <p style="font-family:century gothic;"> Contribute your valuable code on Github to add more features in EFS Software that  would help its growth.</p>
+        <a class="cta-btn" href="https://github.com/mohitojhamohit">Click Here</a>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Skills Section
+    ============================-->
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Skills</h3>
+          <
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">HTML <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">CSS <i class="val">90%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">PHP <i class="val">85%</i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Facts</h3>
+         
+        </header>
+
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">92</span>/100
+            <p>Support Score</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">86</span>/100
+            <p>Storage Score</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">100</span>/100
+            <p>Scanning score </p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">100</span>/100
+            <p>Security score</p>
+  				</div>
+
+  			</div>
+
+       
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Portfolio Services</h3>
+        </header>
+
+        
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/img_1a.jpg" class="img-fluid" alt="">
+                <a href="img/img_1a.jpg" data-lightbox="portfolio" data-title="Service 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Service 1</a></h4>
+          
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/img_2a.png" class="img-fluid" alt="">
+                <a href="img/img_2a.png" class="link-preview" data-lightbox="portfolio" data-title="Service 2" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Service 2</a></h4>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/img_4a.jpg" class="img-fluid" alt="">
+                <a href="img/img_4a.jpg" class="link-preview" data-lightbox="portfolio" data-title="Service 3" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Service 3</a></h4>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/img_3a.jpg" class="img-fluid" alt="">
+                <a href="img/img_3a.jpg" class="link-preview" data-lightbox="portfolio" data-title="Service 4" title="Preview"><i class="ion ion-eye"></i></a>
+               
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Service 4</a></h4>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Service 5" title="Preview"><i class="ion ion-eye"></i></a>
+               
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Service 5</a></h4>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Service 6" title="Preview"><i class="ion ion-eye"></i></a>
+               
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Service 6</a></h4>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+   
+   
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3><span style="font-family:century gothic;">Testimonials</span></h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
 
 
+          <div class="testimonial-item">
+            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Developer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              <span style="font-family:century gothic;">Using EFS Software since 1 month  it has excellent working.</span>
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
 
+          <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              <span style="font-family:century gothic;"> I would suggest every one to use this software.</span>
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
 
+          <div class="testimonial-item">
+            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>MS Student</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+             <span style="font-family:century gothic">Helps alot in saving notes from college pc to home and vice versa. Support EFS Software</span>
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
 
+          <div class="testimonial-item">
+            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              <span style="font-family:century gothic;">Perfect Work I would suggest many developer must contribute EFS Software on Github.</span>
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
 
-<div class="col-sm-6">
+        </div>
 
-<h2><u>Monthly</u></h2>
-<img src="img/monthly.png" width="100%" height="100%">
-</div>
+      </div>
+    </section><!-- #testimonials -->
 
+    <!--==========================
+     
 
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
 
-<div class="col-sm-6">
+        <div class="section-header">
+          <h3>Location</h3>
+        </div>
 
-<h2><u>Yearly</u></h2>
-<img src="img/year.png" width="100%" height="100%">
-</div>
+        <div class="row contact-info">
 
-</div>
-</div>
-<hr>
+          <div class="video-wrapper col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14737.240744575802!2d88.36470396399659!3d22.567499175884855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C+West+Bengal!5e0!3m2!1sen!2sin!4v1550855005304" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
 
-<div class="container text-center" >
-<div class="row">
+          
 
-<div class="col-sm-12" id="benifit">
-<h2>Benifits</h2>
-<div class="heading-underline"></div>
-</div>
+          
+        </div>
 
-<div class="container-fluid" id="main">
-<div class="col-sm-6" id="jack_1">
-<img src="img/img_7.png" width="100%" height="100%" id="jack">
-</div>
+        <div class="form">
+          <div id="sendmessage" style="color:green; font-family:century gothic;">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+		  <span style="font-family:century gothic;font-size:26px;">Message Us</span>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
 
+      </div>
+    </section><!-- #contact -->
 
+  </main>
 
-<div class="col-sm-6" id="jack_1">
+  
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
-<img src="img/img_8a.png" width="100%" height="100%"  id="jack" >
-</div>
+          <div class="col-lg-3 col-md-6 footer-info">
+            <a href="#" style="font-family:century gothic;font-size:30px;"><span style="color:red;">E</span><span style="color:orange;">F</span><span style="color:green;">S</span> <span style="color:white;">Software</span></a>
+            <p>Efs software is usefull and most perfect software that helps in easy file sharing from one to one user means a user can upload and download its file from anywhere.</p>
+          </div>
 
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+             <li><a href="rules.html">FAQ?/Instructions</a></li>
+			<li><a href="signup.php">Easy file Sharing </a></li>
+			<li><a href="signup.php">Online Scanning</a></li>
+            </ul>
+          </div>
 
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              EFS Software House <br>
+              Kolkata,WB<br>
+              <img class="circular--square" src="img/india.png" />  INDIA<br>
+              <strong>Phone: </strong>NIL<br>
+              <strong>Email: </strong>efsosoftware@gmail.com<br>
+            </p>
 
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
 
+          </div>
 
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Work</h4>
+            <p><i>"Our work would help many developer specialy school student and developer who can load there important file or share there the file using EFS Software ."</i></p>
+            
+          </div>
 
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="copyright">
+        &copy;  <strong>EFS Software 2019</strong>.
+      </div>
+      <div class="credits">
+        
+        <span style="font-family:century gothic;">Developed by <b>Mohit Ojha.</b><br></span>
+      </div>
+    </div>
+  </footer><!-- #footer -->
 
-</div>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
 
-</div>
-</div>
+  <!-- JavaScript Libraries -->
+  
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
-<div class="container-fluid">
-<div class="row">
-<div class="card text-center" id="rev">
-<h4>User Review </h4>
-</div>
-
-<div class="col-md-6" >
-<div class="card text-center">
-<img class="card-img-top" src="img/team1.png" width="100%" height="100%">
-
-<div class="card-body">
-<h4>Liza Thomson</h4>
-<div class="heading-underline"></div>
-<p>I am using efs software since 1 year , when i work on some project and i want to upload some thing i use efs<br>
-to upload and download of my stuff.
-Price and support is very good and free for students and other professional at present.
- </p>
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-<div class="col-md-6" >
-<div class="card text-center">
-<img class="card-img-top" src="img/team2.png" width="100%" height="100%">
-
-<div class="card-body">
-<h4>David Dell</h4>
-<div class="heading-underline"></div>
-<p>Using Efs Software  since 6 month <br> i would recommend everyone to specially who want to upload / download file easily, may be an easy software. <br>
-app.
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<hr>
-<footer class="container-fluid text-center">
-<div class="row">
-
-
-
-<div class="col-sm-3">
-<h2><span style="color:red;">E</span><span style="color:orange;">F</span><span style="color:green;">S</span> <span style="color:white;">Software</span></h2>
-</div>
-
-<div class="col-sm-3">
-<h3><u>Contact us</u></h3>
-<h5><i class="fa fa-envelope" aria-hidden="true"></i>Mail: efssoftware034@gmail.com</h5><br>
-</div>
-<div class="col-sm-3">
-						<ul style="font-size:14px;list-style:none; padding:0;">
-						    <h3><u>Works</u></h3>
-							<li><a href="rules.html">FAQ?/<br>Instructions</a></li>
-							<li><a href="signup.php">Easy file Sharing </a></li>
-							<li><a href="signup.php">Online Scanning</a></li>
-						</ul>
-					</div>
-<div class="col-sm-3">
-<h3><u>Social</u></h3>
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-quora"></a>
-</div>
-</div>
-<hr>
-<div class="container-fluid text-center" id="copy">&copy;EFS Software,2019 <img class="circular--square" src="img/india.png" />  <h8>INDIA</h8><br><h5>Developer: Mohit Ojha </h5></div>
-</footer>
-</div>
-<script>
-  $(function()
-  {
-  $(".preloader").fadeOut(1800,function()
-  {
-  $(".content").fadeIn(1200);
-  });
-  });
-  </script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
 </body>
 </html>
-
-
-
-
-
- 
